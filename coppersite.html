@@ -9,11 +9,12 @@
     <script type="text/javascript">
   Copper.events.on('copper.login', function(err, response) {
       console.log('copper.login:', err, response);
-      alert('Hello ' + response.user.name.first_name);
+      appendPre('Hello ' + response.user.name.first_name);
   });
   Copper.events.on('copper.logout', function() {
       console.log('copper.logout -> user logged out');
   });
 </script>
   </body>
+  <pre></pre>
 </html>
