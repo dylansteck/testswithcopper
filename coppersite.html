@@ -4,8 +4,7 @@
 <script type="text/javascript" src="https://cdn.withcopper.com/1/copper.js#application_id=5786DCCA891C0E458DAD4037B551BDBF19937670"></script>
   </head>
   <body>
-    <button class="copper-login" data-scope="openid,name"></button>
-    <button class="copper-login" data-onlogout="_handleUserLogout()" data-scope="openid,name"></button>
+    <button class="copper-login" data-scope="openid,name" data-onlogout="_handleUserLogout()"></button>
     
     <script type="text/javascript">
   Copper.events.on('copper.login', function(err, response) {
