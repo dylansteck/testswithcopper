@@ -11,9 +11,9 @@
       console.log('copper.login:', err, response);
       $('#output').html('Hello ' + response.user.name.first_name);
   });
-  Copper.events.on('copper.logout', function() {
-      console.log('copper.logout -> user logged out');
-  });
+  Copper.logout(function(response) {
+  $('#output').html('logged out');
+});
 </script>
  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   </body>
