@@ -11,13 +11,13 @@
       console.log('copper.login:', err, response);
       $('#output').html('Hello ' + response.user.name.first_name);
   });
-  Copper.events.onl('copper.logout', function(err, response) {
+  Copper.events.on('copper.logout', function(err, response) {
     console.log('copper.logout:', err, response);
-  $('#12345').html('logged out');
+  $('#helloguys').html('logged out');
 });
 </script>
  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   </body>
   <div id="output"></div>
-  <div id="12345"></div>
+  <div id="helloguys"></div>
 </html>
