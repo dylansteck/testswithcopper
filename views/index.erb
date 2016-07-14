@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+<script type="text/javascript" src="//cdn.withcopper.com/1/copper.js#application_id=[578684594D6A27E2F27840B7AFC038D3C2B5CE31]"></script>
+  </head>
+  <body>
+    <button class="copper-login" data-scope="openid,name"></button>
+    
+    <script type="text/javascript">
+  Copper.events.on('copper.login', function(err, response) {
+      console.log('copper.login:', err, response);
+      alert('Hello ' + response.user.name.first_name);
+  });
+  Copper.events.on('copper.logout', function() {
+      console.log('copper.logout -> user logged out');
+  });
+</script>
+  </body>
+</html>
