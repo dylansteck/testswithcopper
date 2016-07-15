@@ -1,4 +1,4 @@
-require_relative "../models/api.rb"
+# require_relative "../models/api.rb"
 class ApplicationController < Sinatra::Base
   
 set :views, "app/views"
@@ -16,8 +16,10 @@ erb :index
 end
 
 post '/' do
+  erb :welcome
   end
 
   get '/welcome' do
+    erb :welcome
   end
 end
