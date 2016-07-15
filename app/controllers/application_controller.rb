@@ -20,3 +20,4 @@ post '/' do
 
   get '/welcome' do
   end
+end
