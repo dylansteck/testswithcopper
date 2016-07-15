@@ -1,13 +1,13 @@
 # require_relative "../models/api.rb"
-class ApplicationController < Sinatra::Base
+require 'sinatra'
   
 set :views, "app/views"
   set :public, "public"
 
 
   configure do
-    set :public_folder, 'public'
-    set :views, 'app/views'
+    set :public_dir, 'public'
+   set :views, "views"
     # enable :sessions
     # set :session_secret, "dashboard"
   end
@@ -22,4 +22,3 @@ post '/' do
   get '/welcome' do
     erb :welcome
   end
-end
